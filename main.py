@@ -98,6 +98,7 @@ def regression(df):
 
     Y_pred = model.predict(X_test)
 
+    st.write('Valeur moyenne :' + str(Y.mean()))
     rms = mean_squared_error(Y_test, Y_pred, squared=False)
     st.write('Root Mean Square Error : ' + str(rms))
 
